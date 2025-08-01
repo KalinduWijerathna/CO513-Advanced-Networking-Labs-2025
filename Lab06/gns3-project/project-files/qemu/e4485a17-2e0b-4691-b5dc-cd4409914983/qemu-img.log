@@ -1,0 +1,1 @@
+Formatting '/home/gns/GNS3/projects/test/project-files/qemu/e4485a17-2e0b-4691-b5dc-cd4409914983/hda_disk.qcow2', fmt=qcow2 cluster_size=65536 extended_l2=off compression_type=zlib size=219152384 backing_file=/home/gns/GNS3/images/QEMU/alpine-standard-3.20.0-x86_64.iso backing_fmt=raw lazy_refcounts=off refcount_bits=16

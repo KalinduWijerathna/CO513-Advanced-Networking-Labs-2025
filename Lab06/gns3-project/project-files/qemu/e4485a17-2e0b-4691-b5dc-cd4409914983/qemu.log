@@ -1,0 +1,5 @@
+Start QEMU with /bin/qemu-system-x86_64 -name Alpine-2 -m 1024M -smp cpus=1,sockets=1 -enable-kvm -machine smm=off -boot order=c -drive file=/home/gns/GNS3/projects/test/project-files/qemu/e4485a17-2e0b-4691-b5dc-cd4409914983/hda_disk.qcow2,if=ide,index=0,media=disk,id=drive0 -uuid e4485a17-2e0b-4691-b5dc-cd4409914983 -serial telnet:127.0.0.1:5013,server,nowait -monitor tcp:127.0.0.1:42615,server,nowait -net none -device e1000,mac=0c:48:5a:17:00:00,netdev=gns3-0 -netdev socket,id=gns3-0,udp=127.0.0.1:10065,localaddr=127.0.0.1:10064 -display none
+
+Execution log:
+qemu-system-x86_64: warning: host doesn't support requested feature: CPUID.80000001H:ECX.svm [bit 2]
+qemu-system-x86_64: terminating on signal 15 from pid 1439943 (/usr/share/gns3/gns3-server/bin/python)

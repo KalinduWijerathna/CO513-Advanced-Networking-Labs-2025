@@ -1,0 +1,90 @@
+Jun 22 10:07:22.893 HYPERVISOR: Release 0.2.23-amd64/Linux (tag 2023010200)
+Jun 22 10:07:22.893 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 47127.
+Jun 22 10:07:22.899 HYPERVISOR: exec_cmd: hypervisor version 
+Jun 22 10:07:22.899 HYPERVISOR: exec_cmd: hypervisor working_dir /home/gns/GNS3/projects/test/project-files/dynamips 
+Jun 22 10:07:22.899 GENERAL: working_dir=/home/gns/GNS3/projects/test/project-files/dynamips
+Jun 22 10:07:22.900 HYPERVISOR: exec_cmd: hypervisor working_dir /home/gns/GNS3/projects/test/project-files/dynamips/db0ae40d-6946-41d5-972c-02e16ec61a8b 
+Jun 22 10:07:22.900 GENERAL: working_dir=/home/gns/GNS3/projects/test/project-files/dynamips/db0ae40d-6946-41d5-972c-02e16ec61a8b
+Jun 22 10:07:22.900 HYPERVISOR: exec_cmd: vm create R2 2 c7200 
+Jun 22 10:07:22.900 VM: VM R2 created.
+Jun 22 10:07:22.900 HYPERVISOR: exec_cmd: vm set_con_tcp_port R2 5001 
+Jun 22 10:07:22.900 HYPERVISOR: exec_cmd: c7200 get_mac_addr R2 
+Jun 22 10:07:22.900 HYPERVISOR: exec_cmd: vm get_status R2 
+Jun 22 10:07:22.901 HYPERVISOR: exec_cmd: vm slot_add_binding R2 0 0 C7200-IO-FE 
+Jun 22 10:07:22.901 HYPERVISOR: exec_cmd: vm set_ios R2 /home/gns/GNS3/images/IOS/c7200-advipservicesk9-mz.152-4.S5.image 
+Jun 22 10:07:22.901 HYPERVISOR: exec_cmd: vm get_status R2 
+Jun 22 10:07:22.902 HYPERVISOR: exec_cmd: vm set_idle_pc R2 0x62cc90e4 
+Jun 22 10:07:22.902 HYPERVISOR: exec_cmd: vm set_ram R2 512 
+Jun 22 10:07:22.902 HYPERVISOR: exec_cmd: vm set_nvram R2 512 
+Jun 22 10:07:22.902 HYPERVISOR: exec_cmd: vm set_disk0 R2 0 
+Jun 22 10:07:22.903 HYPERVISOR: exec_cmd: vm get_status R2 
+Jun 22 10:07:22.903 HYPERVISOR: exec_cmd: vm slot_add_binding R2 1 0 PA-4T+ 
+Jun 22 10:07:22.903 HYPERVISOR: exec_cmd: vm get_status R2 
+Jun 22 10:07:22.903 HYPERVISOR: exec_cmd: vm slot_add_binding R2 2 0 PA-GE 
+Jun 22 10:07:22.904 HYPERVISOR: exec_cmd: vm get_status R2 
+Jun 22 10:07:22.904 HYPERVISOR: exec_cmd: vm slot_add_binding R2 3 0 PA-GE 
+Jun 22 10:07:22.904 HYPERVISOR: exec_cmd: vm get_status R2 
+Jun 22 10:07:22.904 HYPERVISOR: exec_cmd: vm slot_add_binding R2 4 0 PA-GE 
+Jun 22 10:07:22.904 HYPERVISOR: exec_cmd: vm get_status R2 
+Jun 22 10:07:22.904 HYPERVISOR: exec_cmd: vm slot_add_binding R2 5 0 PA-GE 
+Jun 22 10:07:22.905 HYPERVISOR: exec_cmd: vm get_status R2 
+Jun 22 10:07:22.905 HYPERVISOR: exec_cmd: vm slot_add_binding R2 6 0 PA-8E 
+Jun 22 10:07:23.062 HYPERVISOR: exec_cmd: vm set_ios R2 /home/gns/GNS3/images/IOS/c7200-advipservicesk9-mz.152-4.S5.image 
+Jun 22 10:07:27.057 HYPERVISOR: exec_cmd: vm set_ios R2 /home/gns/GNS3/images/IOS/c7200-advipservicesk9-mz.152-4.S5.image 
+Jun 22 10:07:49.803 HYPERVISOR: exec_cmd: vm set_ios R2 /home/gns/GNS3/images/IOS/c7200-advipservicesk9-mz.152-4.S5.image 
+Jun 22 10:07:53.831 HYPERVISOR: exec_cmd: vm set_ios R2 /home/gns/GNS3/images/IOS/c7200-advipservicesk9-mz.152-4.S5.image 
+Jun 22 10:08:21.188 HYPERVISOR: exec_cmd: nio create_udp udp-a74655cb-b77e-450b-b977-637f93b6f9f0 10004 127.0.0.1 10005 
+Jun 22 10:08:21.397 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R2 6 0 udp-a74655cb-b77e-450b-b977-637f93b6f9f0 
+Jun 22 10:08:21.398 HYPERVISOR: exec_cmd: vm get_status R2 
+Jun 22 10:08:36.664 HYPERVISOR: exec_cmd: nio create_udp udp-db86099c-7e3b-4096-ab16-66969818f7e8 10014 127.0.0.1 10015 
+Jun 22 10:08:36.665 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R2 6 1 udp-db86099c-7e3b-4096-ab16-66969818f7e8 
+Jun 22 10:08:36.665 HYPERVISOR: exec_cmd: vm get_status R2 
+Jun 22 10:08:51.288 HYPERVISOR: exec_cmd: nio create_udp udp-4fcfaafe-5551-4f79-83a4-d1c61c3e9df1 10026 127.0.0.1 10027 
+Jun 22 10:08:51.289 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R2 6 2 udp-4fcfaafe-5551-4f79-83a4-d1c61c3e9df1 
+Jun 22 10:08:51.289 HYPERVISOR: exec_cmd: vm get_status R2 
+Jun 22 10:09:02.624 HYPERVISOR: exec_cmd: vm set_ghost_status R2 2 
+Jun 22 10:09:02.624 HYPERVISOR: exec_cmd: vm set_ghost_file R2 /home/gns/GNS3/projects/test/project-files/dynamips/c7200-advipservicesk9-mz.152-4.S5.image-512.ghost 
+Jun 22 10:09:02.624 HYPERVISOR: exec_cmd: vm get_status R2 
+Jun 22 10:09:02.624 HYPERVISOR: exec_cmd: vm set_config R2 configs/i2_startup-config.cfg 
+Jun 22 10:09:02.624 HYPERVISOR: exec_cmd: vm start R2 
+Jun 22 10:09:32.837 HYPERVISOR: exec_cmd: vm extract_config R2 
+Jun 22 10:16:22.744 HYPERVISOR: exec_cmd: vm get_status R2 
+Jun 22 10:16:22.744 HYPERVISOR: exec_cmd: vm slot_disable_nio R2 6 0 
+Jun 22 10:16:22.763 HYPERVISOR: exec_cmd: vm slot_remove_nio_binding R2 6 0 
+Jun 22 10:16:22.764 HYPERVISOR: exec_cmd: nio delete udp-a74655cb-b77e-450b-b977-637f93b6f9f0 
+Jun 22 10:16:29.345 HYPERVISOR: exec_cmd: vm get_status R2 
+Jun 22 10:16:29.345 HYPERVISOR: exec_cmd: vm slot_disable_nio R2 6 1 
+Jun 22 10:16:29.361 HYPERVISOR: exec_cmd: vm slot_remove_nio_binding R2 6 1 
+Jun 22 10:16:29.361 HYPERVISOR: exec_cmd: nio delete udp-db86099c-7e3b-4096-ab16-66969818f7e8 
+Jun 22 10:16:30.710 HYPERVISOR: exec_cmd: vm get_status R2 
+Jun 22 10:16:30.710 HYPERVISOR: exec_cmd: vm slot_disable_nio R2 6 2 
+Jun 22 10:16:30.724 HYPERVISOR: exec_cmd: vm slot_remove_nio_binding R2 6 2 
+Jun 22 10:16:30.725 HYPERVISOR: exec_cmd: nio delete udp-4fcfaafe-5551-4f79-83a4-d1c61c3e9df1 
+Jun 22 10:16:40.979 HYPERVISOR: exec_cmd: nio create_udp udp-bf96a2eb-2682-40c3-895d-25f3aa046b82 10004 127.0.0.1 10005 
+Jun 22 10:16:40.979 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R2 1 0 udp-bf96a2eb-2682-40c3-895d-25f3aa046b82 
+Jun 22 10:16:40.980 HYPERVISOR: exec_cmd: vm get_status R2 
+Jun 22 10:16:40.980 HYPERVISOR: exec_cmd: vm slot_enable_nio R2 1 0 
+Jun 22 10:16:52.999 HYPERVISOR: exec_cmd: nio create_udp udp-8165a796-3c45-46e3-ab51-8eb703d343c4 10014 127.0.0.1 10015 
+Jun 22 10:16:53.000 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R2 1 1 udp-8165a796-3c45-46e3-ab51-8eb703d343c4 
+Jun 22 10:16:53.000 HYPERVISOR: exec_cmd: vm get_status R2 
+Jun 22 10:16:53.000 HYPERVISOR: exec_cmd: vm slot_enable_nio R2 1 1 
+Jun 22 10:17:10.588 HYPERVISOR: exec_cmd: nio create_udp udp-6d3ee6e8-8455-40a9-8ff1-f5d1ac417915 10032 127.0.0.1 10033 
+Jun 22 10:17:10.589 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R2 1 2 udp-6d3ee6e8-8455-40a9-8ff1-f5d1ac417915 
+Jun 22 10:17:10.589 HYPERVISOR: exec_cmd: vm get_status R2 
+Jun 22 10:17:10.589 HYPERVISOR: exec_cmd: vm slot_enable_nio R2 1 2 
+Jun 22 10:18:20.723 HYPERVISOR: exec_cmd: vm set_ghost_status R2 2 
+Jun 22 10:18:20.724 HYPERVISOR: exec_cmd: vm set_ghost_file R2 /home/gns/GNS3/projects/test/project-files/dynamips/c7200-advipservicesk9-mz.152-4.S5.image-512.ghost 
+Jun 22 10:18:20.724 HYPERVISOR: exec_cmd: vm get_status R2 
+Jun 22 10:18:26.504 HYPERVISOR: exec_cmd: vm get_status R2 
+Jun 22 10:18:26.504 HYPERVISOR: exec_cmd: vm stop R2 
+Jun 22 10:18:26.574 VM: VM R2 shutdown.
+Jun 22 10:18:26.574 HYPERVISOR: exec_cmd: vm extract_config R2 
+Jun 22 10:18:31.729 HYPERVISOR: exec_cmd: vm set_ghost_status R2 2 
+Jun 22 10:18:31.751 HYPERVISOR: exec_cmd: vm set_ghost_file R2 /home/gns/GNS3/projects/test/project-files/dynamips/c7200-advipservicesk9-mz.152-4.S5.image-512.ghost 
+Jun 22 10:18:31.752 HYPERVISOR: exec_cmd: vm get_status R2 
+Jun 22 10:18:31.752 HYPERVISOR: exec_cmd: vm set_config R2 configs/i2_startup-config.cfg 
+Jun 22 10:18:31.753 HYPERVISOR: exec_cmd: vm start R2 
+Jun 22 10:19:13.282 HYPERVISOR: Stopped.
+Jun 22 10:19:13.387 VM: VM R2 shutdown.
+Jun 22 10:19:13.387 VM: VM R2 destroyed.
+Jun 22 10:19:13.387 GENERAL: reset done.

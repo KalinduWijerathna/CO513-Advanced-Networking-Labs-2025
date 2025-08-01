@@ -1,0 +1,67 @@
+Jun 22 10:07:39.146 HYPERVISOR: Release 0.2.23-amd64/Linux (tag 2023010200)
+Jun 22 10:07:39.146 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 60291.
+Jun 22 10:07:39.152 HYPERVISOR: exec_cmd: hypervisor version 
+Jun 22 10:07:39.152 HYPERVISOR: exec_cmd: hypervisor working_dir /home/gns/GNS3/projects/test/project-files/dynamips 
+Jun 22 10:07:39.152 GENERAL: working_dir=/home/gns/GNS3/projects/test/project-files/dynamips
+Jun 22 10:07:39.152 HYPERVISOR: exec_cmd: hypervisor working_dir /home/gns/GNS3/projects/test/project-files/dynamips/b0097459-837a-4974-88e4-1fccd5dbcc53 
+Jun 22 10:07:39.152 GENERAL: working_dir=/home/gns/GNS3/projects/test/project-files/dynamips/b0097459-837a-4974-88e4-1fccd5dbcc53
+Jun 22 10:07:39.153 HYPERVISOR: exec_cmd: vm create R4 4 c7200 
+Jun 22 10:07:39.153 VM: VM R4 created.
+Jun 22 10:07:39.153 HYPERVISOR: exec_cmd: vm set_con_tcp_port R4 5003 
+Jun 22 10:07:39.153 HYPERVISOR: exec_cmd: c7200 get_mac_addr R4 
+Jun 22 10:07:39.153 HYPERVISOR: exec_cmd: vm get_status R4 
+Jun 22 10:07:39.153 HYPERVISOR: exec_cmd: vm slot_add_binding R4 0 0 C7200-IO-FE 
+Jun 22 10:07:39.154 HYPERVISOR: exec_cmd: vm set_ios R4 /home/gns/GNS3/images/IOS/c7200-advipservicesk9-mz.152-4.S5.image 
+Jun 22 10:07:39.154 HYPERVISOR: exec_cmd: vm get_status R4 
+Jun 22 10:07:39.154 HYPERVISOR: exec_cmd: vm set_idle_pc R4 0x62cc90e4 
+Jun 22 10:07:39.155 HYPERVISOR: exec_cmd: vm set_ram R4 512 
+Jun 22 10:07:39.155 HYPERVISOR: exec_cmd: vm set_nvram R4 512 
+Jun 22 10:07:39.155 HYPERVISOR: exec_cmd: vm set_disk0 R4 0 
+Jun 22 10:07:39.156 HYPERVISOR: exec_cmd: vm get_status R4 
+Jun 22 10:07:39.156 HYPERVISOR: exec_cmd: vm slot_add_binding R4 1 0 PA-4T+ 
+Jun 22 10:07:39.156 HYPERVISOR: exec_cmd: vm get_status R4 
+Jun 22 10:07:39.156 HYPERVISOR: exec_cmd: vm slot_add_binding R4 2 0 PA-GE 
+Jun 22 10:07:39.157 HYPERVISOR: exec_cmd: vm get_status R4 
+Jun 22 10:07:39.157 HYPERVISOR: exec_cmd: vm slot_add_binding R4 3 0 PA-GE 
+Jun 22 10:07:39.157 HYPERVISOR: exec_cmd: vm get_status R4 
+Jun 22 10:07:39.157 HYPERVISOR: exec_cmd: vm slot_add_binding R4 4 0 PA-GE 
+Jun 22 10:07:39.157 HYPERVISOR: exec_cmd: vm get_status R4 
+Jun 22 10:07:39.157 HYPERVISOR: exec_cmd: vm slot_add_binding R4 5 0 PA-GE 
+Jun 22 10:07:39.158 HYPERVISOR: exec_cmd: vm get_status R4 
+Jun 22 10:07:39.158 HYPERVISOR: exec_cmd: vm slot_add_binding R4 6 0 PA-8E 
+Jun 22 10:07:39.227 HYPERVISOR: exec_cmd: vm set_ios R4 /home/gns/GNS3/images/IOS/c7200-advipservicesk9-mz.152-4.S5.image 
+Jun 22 10:07:40.336 HYPERVISOR: exec_cmd: vm set_ios R4 /home/gns/GNS3/images/IOS/c7200-advipservicesk9-mz.152-4.S5.image 
+Jun 22 10:08:58.335 HYPERVISOR: exec_cmd: nio create_udp udp-0d30a131-794c-4fb9-a95d-a0b87f2fd96c 10034 127.0.0.1 10035 
+Jun 22 10:08:58.542 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R4 6 0 udp-0d30a131-794c-4fb9-a95d-a0b87f2fd96c 
+Jun 22 10:08:58.543 HYPERVISOR: exec_cmd: vm get_status R4 
+Jun 22 10:09:02.839 HYPERVISOR: exec_cmd: vm set_ghost_status R4 2 
+Jun 22 10:09:02.839 HYPERVISOR: exec_cmd: vm set_ghost_file R4 /home/gns/GNS3/projects/test/project-files/dynamips/c7200-advipservicesk9-mz.152-4.S5.image-512.ghost 
+Jun 22 10:09:02.840 HYPERVISOR: exec_cmd: vm get_status R4 
+Jun 22 10:09:02.840 HYPERVISOR: exec_cmd: vm set_config R4 configs/i4_startup-config.cfg 
+Jun 22 10:09:02.840 HYPERVISOR: exec_cmd: vm start R4 
+Jun 22 10:09:20.402 HYPERVISOR: exec_cmd: vm set_ios R4 /home/gns/GNS3/images/IOS/c7200-advipservicesk9-mz.152-4.S5.image 
+Jun 22 10:09:33.069 HYPERVISOR: exec_cmd: vm extract_config R4 
+Jun 22 10:16:32.591 HYPERVISOR: exec_cmd: vm get_status R4 
+Jun 22 10:16:32.591 HYPERVISOR: exec_cmd: vm slot_disable_nio R4 6 0 
+Jun 22 10:16:32.609 HYPERVISOR: exec_cmd: vm slot_remove_nio_binding R4 6 0 
+Jun 22 10:16:32.609 HYPERVISOR: exec_cmd: nio delete udp-0d30a131-794c-4fb9-a95d-a0b87f2fd96c 
+Jun 22 10:17:05.263 HYPERVISOR: exec_cmd: nio create_udp udp-184e0ab4-81bc-4b57-9351-9fdbabdc87c5 10028 127.0.0.1 10029 
+Jun 22 10:17:05.264 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R4 1 0 udp-184e0ab4-81bc-4b57-9351-9fdbabdc87c5 
+Jun 22 10:17:05.264 HYPERVISOR: exec_cmd: vm get_status R4 
+Jun 22 10:17:05.264 HYPERVISOR: exec_cmd: vm slot_enable_nio R4 1 0 
+Jun 22 10:18:20.725 HYPERVISOR: exec_cmd: vm set_ghost_status R4 2 
+Jun 22 10:18:20.726 HYPERVISOR: exec_cmd: vm set_ghost_file R4 /home/gns/GNS3/projects/test/project-files/dynamips/c7200-advipservicesk9-mz.152-4.S5.image-512.ghost 
+Jun 22 10:18:20.726 HYPERVISOR: exec_cmd: vm get_status R4 
+Jun 22 10:18:26.551 HYPERVISOR: exec_cmd: vm get_status R4 
+Jun 22 10:18:26.551 HYPERVISOR: exec_cmd: vm stop R4 
+Jun 22 10:18:26.586 VM: VM R4 shutdown.
+Jun 22 10:18:26.586 HYPERVISOR: exec_cmd: vm extract_config R4 
+Jun 22 10:18:31.962 HYPERVISOR: exec_cmd: vm set_ghost_status R4 2 
+Jun 22 10:18:31.962 HYPERVISOR: exec_cmd: vm set_ghost_file R4 /home/gns/GNS3/projects/test/project-files/dynamips/c7200-advipservicesk9-mz.152-4.S5.image-512.ghost 
+Jun 22 10:18:31.962 HYPERVISOR: exec_cmd: vm get_status R4 
+Jun 22 10:18:31.962 HYPERVISOR: exec_cmd: vm set_config R4 configs/i4_startup-config.cfg 
+Jun 22 10:18:31.962 HYPERVISOR: exec_cmd: vm start R4 
+Jun 22 10:19:13.282 HYPERVISOR: Stopped.
+Jun 22 10:19:13.326 VM: VM R4 shutdown.
+Jun 22 10:19:13.326 VM: VM R4 destroyed.
+Jun 22 10:19:13.326 GENERAL: reset done.

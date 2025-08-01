@@ -1,0 +1,5 @@
+Start QEMU with /bin/qemu-system-x86_64 -name Mobile_Node -m 1024M -smp cpus=1,sockets=1 -enable-kvm -machine smm=off -boot order=c -drive file=/home/gns/GNS3/projects/mobile-ip/project-files/qemu/e5d8ad2c-0710-43c6-aa87-28c9fed79b2c/hda_disk.qcow2,if=ide,index=0,media=disk,id=drive0 -uuid e5d8ad2c-0710-43c6-aa87-28c9fed79b2c -serial telnet:127.0.0.1:5001,server,nowait -monitor tcp:127.0.0.1:38887,server,nowait -net none -device e1000,mac=0c:d8:ad:2c:00:00,netdev=gns3-0 -netdev socket,id=gns3-0,udp=127.0.0.1:10033,localaddr=127.0.0.1:10032 -device e1000,mac=0c:d8:ad:2c:00:01,netdev=gns3-1 -netdev socket,id=gns3-1,udp=127.0.0.1:10035,localaddr=127.0.0.1:10034 -display none
+
+Execution log:
+qemu-system-x86_64: warning: host doesn't support requested feature: CPUID.80000001H:ECX.svm [bit 2]
+qemu-system-x86_64: terminating on signal 15 from pid 18320 (/usr/share/gns3/gns3-server/bin/python)
